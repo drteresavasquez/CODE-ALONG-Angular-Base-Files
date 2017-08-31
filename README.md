@@ -101,4 +101,22 @@ module.exports = function(grunt) {
 };
 ```
 
-Every time you `grunt -force` grunt will combined all you `js` files into one `app.js` and put it inside the `dist` folder. Notice that in the `index.html` is a `script` tag linking to that file. Also, your browser will open a tab for the app and it will refresh every time any changes occurs in your files. Hope this is helpful for every one.
+Every time you `grunt -force` grunt will combined all you `js` files into one `app.js` and put it inside the `dist` folder. Notice that in the `index.html` is a `script` tag linking to that file. Also, your browser will open a tab for the app and it will refresh every time any changes occurs in your files.
+
+## File structure
+
+As far as the file structure, based on the size of your application you can decided if the current file structure works for you or you need to change it to something that makes sense to you, like the following...
+
+```
+app
+|_user
+|  |_user.controller.js
+|  |_user.service.js
+|  |_user.template.html
+|_navbar
+  |_navbar.controller.js
+  |_navbar.service.js
+  ...
+```
+
+Hope this is helpful for every one.
